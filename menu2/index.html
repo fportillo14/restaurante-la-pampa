@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menu Restaurante la Pampa</title>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="container-fluid bg-dark position-sticky top-0">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active "
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="false"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Menu</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Orden</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido a Orden!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido de Orden!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+      <center>  <label style="font-size: 14pt"><h1 style="color: #f30707;"></style>BIENVENIDOS A RESTAURANTE LA PAMPA</h1>
+        <div class="card shadow mb-1 bg-dark" style="width: 50rem;">
+        <img src="./img/LOGOPAMPA.jpg" class="card-img" alt="..."></div>
+  
+        <div class="card shadow mb-1 bg-dark" style="width: 30rem;">
+        <img src="./img/PROMO HAMBU.jpg" class="card-img" alt="..."></div>
+  
+        <div class="card shadow mb-1 bg-dark" style="width: 30rem;">
+        <img src="./img/PROMO ENSALADAS.jpg" class="card-img" alt="..."></div>
+  
+      </div>
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <h2 class="h4 m-4 text-primary">MENU</h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">LASAÑA MEDIANA</h5>
+              <img src="./img/LASAÑA.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Lasaña Mediana acompañada con pan con matequilla.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 50</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">6 BROCHETAS MIXTAS</h5>
+              <img src="./img/BROCHETAS.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: 6 brochetas mixtas asadas.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 110</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">HAMBURGUESA CLASICA</h5>
+              <img src="./img/HAMBU.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Hamburguesa Clasica con doble torta de carne con queso, acompañada con papas.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 80</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">LANGOSTA</h5>
+              <img src="./img/LANGOSTA.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Lagosta mediana al vapor servida con pan con mantequilla.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 120</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">FILETE DE RES</h5>
+              <img src="./img/RES.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Filete de res de 1/4 de libra asada.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 80</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">CAMARONES</h5>
+              <img src="./img/CAMARONES.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Camarones al aljillo.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 55</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">CARPACCIO</h5>
+              <img src="./img/CARPACCIO.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Carpaccio.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 100</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">MOLLEJAS DE RES</h5>
+              <img src="./img/MOLLEJAS DE RES.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Mollejas de res asadas acompañadas son salsa de tomate de la Pampa y chiles.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 80</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">FILETE MIÑON</h5>
+              <img src="./img/FILETE MIÑON.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Filete miñon.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 80</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">CAMARONES EMPANIZADOS</h5>
+              <img src="./img/CAMARONES EMPANIZADOS.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: 7 Camarones empanizadps acompañados con aderezo de la casa.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 60</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">PUYASO TERMINO MEDIO</h5>
+              <img src="./img/PUYASO TERMINO MEDIO.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Puyaso termino medio.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 70</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">LOMITO MEDIO PRIME</h5>
+              <img src="./img/LOMITO PRIME.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Lomito de calidad prime.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 90</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">CARNE DE RES</h5>
+              <img src="./img/CARNE DE RES1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Carne de res acompañada de pure de papa, aguacate y guicoy fritos.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 80</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">FILETE MIÑON</h5>
+              <img src="./img/FILETE MIÑON.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">DETALLES: Filete miñon.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Q 80</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Orden</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+
+
+
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        
+        <form action="noesta.html" method="get">
+          <fieldset>
+            <legend>Datos</legend>
+              Nombre y apellido<input type="text"  placeholder="Ingrese su nombre" maxlength="20" required> <br> 
+                        
+              Numero de Mesa <input type="number" placeholder="No. Mesa" required> <br> 
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success" onclick="hizoClick()">O R D E N A R</button>
+        </div>
+        <script>
+     
+       function hizoClick() {
+         alert("Orden Realizado con exito");
+       }
+       </script>
+
+      </div>
+
+      </div>
+    </div>
+
+    <footer class="bg-dark p-3 mt-5">
+      <p class="text-center m-0 text-muted">RESTAURANTE LA PAMPA</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
